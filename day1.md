@@ -65,25 +65,25 @@ Links : https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/#ex
 
 ## Deployments
 Encapsulates pod and replica sets. Is used to apply various deployment strategies like rolling updates, blue-green etc.
-Very similar to Replica Sets
-Commands
+Very similar to Replica Sets. Apart from RS, deployments can be used to apply updates to running pods like changing image or tag within an image without any downtime.
+Commands:
 
 kubectl get all
 kubectl get deploy
 kubectl apply -f deploy.yaml
-Links: https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#creating-a-deployment
 
-Namespaces
+
+## Namespaces
 Separates resources eg. Environments
 Resources limits like CPU can be set for each namespace
 Within Namespace objects are referred directly using the object names
 Outside Namespace : svc-name.Namespace.svc.cluster.local
-Resource Quota :
-
-Used to specify cpu limit and storage to namespace.
-Commands namespace ~ ns
-
+Commands: namespace ~ ns
+kubectl create ns namespace1
 kubectl get ns
-kubectl config set-context $(k config current-context) --namespace=name
-Links : https://kubernetes.io/docs/tasks/administer-cluster/namespaces/#creating-a-new-namespace
+kubectl get po -n namespace1
+kubectl get rs -n namespace1
+
+
+
 
