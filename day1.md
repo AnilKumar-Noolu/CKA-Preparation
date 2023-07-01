@@ -25,4 +25,6 @@ Controller : brain behind K8, notices when a node is down , takes desicions to b
 Nodes are workhorses of K8 Cluster. Nodes expose Compute, Networking and Storage.
 ## Components:
 
-kubelet: It runs on every node in the cluster. It eatches for tasks send by api-server and executes them and also reports the status back to manager
+Kubelet: It runs on every node in the cluster. It eatches for tasks send by api-server and executes them and also reports the status back to manager.
+Container runtime : It is a software that runs containers, It can be Docker, containerD or any other tool for containerizing applications.
+Kube-proxy: It is a Networking proxy service that runs on ecah node and makes sure that each Node gets and IP to handle the roting, so that we can expose the services to the internet.
