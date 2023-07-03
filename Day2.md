@@ -27,16 +27,16 @@ We can also use rollout status and rollout history commands to get status and hi
  '''
  FROM Ubuntu
  CMD ["sleep", "5"]
- '''
+ ''
  Docker command while runnig container: docker run ubuntu sleep 10
  The command that is passed at startuyp : sleep 10
-
+''
  In case of Entrypoint, the command line parameters will get appended.
- '''
+ ''
  FROM Ubuntu
 ENTRYPOINT ["sleep"]
 entrypoint ["5"]
-'''
+''
  Docker command while runnig container: docker run ubuntu sleep 10
  The command that is passed at startuyp : sleep 5
 
