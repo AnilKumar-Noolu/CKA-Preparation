@@ -66,7 +66,7 @@ OR
 OR
 
   args: ["sleep", "10"]
-
+```
 **With args in yaml file, we override CMD in Dockerfile
 ** With command in yaml file, we can override ENTRYPOINT in Dockerfile.
 The instructions passed in yaml definition file will override CMD and Entrypoint passed in the Dockerfile definition.
