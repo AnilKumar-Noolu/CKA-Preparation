@@ -2,8 +2,8 @@
   When we want to pass any key-value pair to an application, we will use configMaps instaed of directly oassing it to pods or deployment.
 We can create configmaps in 2 ways:
 1) Imperative way:
-a) kubectl create configmap app-config --from-literal=<key_name>=<value>
-b) kubectl create configmap app-config --from-file=<file_name>
+-> kubectl create configmap app-config --from-literal=<key_name>=<value>
+-> kubectl create configmap app-config --from-file=<file_name>
 
 2)Declarative Way: Creating a configMap using yaml file
 ```
