@@ -5,4 +5,4 @@ This Repository consists of Resources whcih I have used in my preparation of Cer
  - [Udemy course](https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/)
  - [Kubernetes official docs](https://kubernetes.io/docs/home/)
 
-This Repo is just a collection snd synopsis of my learning for CKA exam.
+This Repo is just a collection and synopsis of my learning for CKA exam.
