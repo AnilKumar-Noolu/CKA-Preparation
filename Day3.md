@@ -3,7 +3,7 @@
 We can create configmaps in 2 ways:
 1) Imperative way:
 
-kubectl create configmap app-config --from-literal=<key>=<value>
+kubectl create configmap app-config --from-literal=key=value
 
  kubectl create configmap app-config --from-file=<file_name>
 
