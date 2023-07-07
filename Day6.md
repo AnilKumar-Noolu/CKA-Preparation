@@ -27,6 +27,17 @@ spec:
       cpu: 2
 ```
 
-## 
+## Resource Quotas
+Resource Quotas will be set at namespace level.
+
+They will set a limit for all the Pods in that Node.
+```
+spec:
+  hard:
+    requests.cpu: 4
+    requets.memory: 4Gi
+    limits.cpu: 10
+    limits.memory: 10Gi
+```
       
-:
+
