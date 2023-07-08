@@ -45,7 +45,7 @@ Links : https://kubernetes.io/docs/concepts/workloads/pods/#using-pods
 ## Replica sets:  
                        Used to make sure that the specific number of replicas are running across all nodes.
 Manages node failure
-Balances load
+Balances load.
 Spread across multiple nodes in the cluster
 Has selector label unlike Replication Controller. Selector label allows Replica Set to manage pods which were not created as part of the replica definition file.
 It ensures that at all times specified number of pods are available.
