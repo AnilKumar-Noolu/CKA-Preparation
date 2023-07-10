@@ -22,6 +22,7 @@ If there are 1/2 users, we can sign requests manually, but as users increases an
 All certificate related activities will be carried out by Controller Manager.
 
 ## KubeConfig:
+A Kubeconfig is a YAML file with all the Kubernetes cluster details, certificates, and secret token to authenticate the cluster.
 KubeConfig willbe stored default at $HOME/.kube/ location.
 
 Whenever you want to query a cluster, you should write a command with name of cluster, key, certificates..... This is a tedious task.
