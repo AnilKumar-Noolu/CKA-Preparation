@@ -56,7 +56,7 @@ users:
 ```
 In Cluster Section, you can mention the name of the cluster like dev, prod environments and certificate-authority-data and server specifications will be going to this Section.
 
-In Context section, you will mention the user configured with the current cluster.
+In Context section, you will mention the user who are configured with the what cluster.
 
 In Users Section, you will mention the users along with their client-certificate, client-keys or Tokens.
 
