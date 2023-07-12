@@ -74,4 +74,4 @@ kubectl auth can-i create deploy     //If the output is yes, you have an access 
 
 kubectl auth can-i delete pods
 
-kubectl 
+kubectl auth can-i create pods --as user1     //To check other users have permissions to create objects in Kubernetes
