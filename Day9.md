@@ -1,9 +1,14 @@
-## Authorization
+## Authentication and Authorization
 We want people to get only minimum level of access not full access to modify objects in Kubernetes Cluster.
 
 There are various Authorization methods in Kubernetes such as Node Authoriser, Webhook, Always Allow, Always Deny, ABAC(Attribute based access control), RBAC(Role Based Access Control)
 
 Generally in kube-apiserver, authorization mode will be mentioned like --authorization-mode=RBAC. If nothing is mentioned, it takes alwaysAllow by default.
+
+API Groups
+1. All resources are grouped into different API Groups
+2. Top level : Core & Named API group
+3. Named : Contains Api group for each resource, there are verbs or actions defined for each resource
 
 ## ABAC:
 We need to provide users a Policy to create/view/delet Pods and pass them to the Kube-apiserver.
