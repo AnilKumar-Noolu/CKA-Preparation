@@ -16,4 +16,4 @@ We can also create role, rolebindings, clusterrole, clusterrolebindings using im
 
 kubectl create clusterrole <clusterrole_name> --resource=pods,deployments --verbs=list,create,get,watch
 
-kubectl create clusterrolebinding <clusterrolebinding-name> --user=<user-name> --clusterrole=<clusterrole-name>
+kubectl create clusterrolebinding <clusterrolebinding-name> --user=user-name --clusterrole=clusterrole-name
