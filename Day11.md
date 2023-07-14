@@ -14,8 +14,8 @@ kubectl get serviceaccount
 
 kubectl describe serviceaccount dashboard
 
--Whenever SA is created, a token will be created. This token must be used by external application while authenticating with Kubernetes API.
--Tokens are stored as a secret object, U can usethis command while using curl command.
--If we have dashboard (or) prometheus deployed on Kubernetes itself as a Pod, then we configure them by mounting the serviceaccount token secret as a volume inside pod hosting 3-party application.
+- Whenever SA is created, a token will be created. This token must be used by external application while authenticating with Kubernetes API.
+- Tokens are stored as a secret object, U can usethis command while using curl command.
+- If we have dashboard (or) prometheus deployed on Kubernetes itself as a Pod, then we configure them by mounting the serviceaccount token secret as a volume inside pod hosting 3-party application.
 
  
