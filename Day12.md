@@ -31,11 +31,11 @@ docker run --user=1001 ubuntu sleep 300
 By default, Docker runs a conatiner with a limited set of Capabalities and so the process running within container do not have privileges to say reboot host or Perform operations.
 
 #### commands
-docker run --cap-add MAC_ADMIN ubuntu            // To add new Privilege to the container
+docker run --cap-add MAC_ADMIN ubuntu                            // To add new Privilege to the container
 
-docker run --cap-drop MAC_ADMIN ubuntu           // To drop new Privilege to the container
+docker run --cap-drop MAC_ADMIN ubuntu                           // To drop new Privilege to the container
 
-docker run --privileged ubuntu                  // To run the container with all privileges
+docker run --privileged ubuntu                                  // To run the container with all privileges
 
 In K8, the settings on container will override settings on Pod. If you apply settings on pod, it will apply to all containers in that Pod.
 ```
