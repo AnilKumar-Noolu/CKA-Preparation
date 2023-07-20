@@ -49,4 +49,7 @@ spec:
         path: /data
         type: Directory
 ```
+The above volumes and mountPath options works fine for Single Node. But for multi-node cluster, it is not recommended as data directory will be different for different nodes on Kubernetes Cluster.
+
+So, for the above multi-node cluster, Kubernetes supports different storage solutions such as NFS, Flocker Ceph, AWS EBS, Azure desktop..
     
