@@ -15,3 +15,55 @@ Ingress mainly consists of 2 objects:
 - A configmap to feed Nginx Configuration data.
 - A Service Account with right permissions to access all of these objects.
 ```
+//If you have a single backend.
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-wear
+spec:
+  backend:
+    service:
+      name: svc-1
+    port:
+      number: 8080
+
+//Route based on different URL's
+spec:
+  rules:
+  - http:
+    paths:
+    - path: /wear
+      backend:
+        service:
+          name: svc-1
+        port:
+          number: 8080
+    - path: /tear
+      backend:
+        service:
+          name: svc-2
+        port:
+          number: 80
+
+//Route based on Domains
+spec:
+  rules:
+  - host: shirts.buy.com
+    http:
+      paths:
+      - backend:
+           service:
+              name: svc-1
+            port:
+              number: 80
+   - host: watch.buy.com
+      http:
+        paths:
+        - backend:
+             service:
+                name: svc-2
+              port:
+                number: 80
+```
+
+If a user tries to access URL that doesn't match any of these rules, iuser is directed to default backend.
